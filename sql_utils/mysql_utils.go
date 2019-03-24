@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func MySQLConnect(username string, password string, databasename string) {
+func MySQLConnect(username string, password string, databasename string) *sql.DB {
 
 	db, err := sql.Open("mysql", username+":"+password+"@/"+databasename) //对应数据库的用户名和密码
 	defer db.Close()
@@ -14,4 +14,5 @@ func MySQLConnect(username string, password string, databasename string) {
 	} else {
 		fmt.Println("success")
 	}
+	return db
 }
