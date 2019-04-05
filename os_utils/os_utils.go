@@ -1,5 +1,9 @@
 package os_utils
 
-func Data() {
+import "os"
+
+func Date() {
+
+	os.TempDir()
 
 }

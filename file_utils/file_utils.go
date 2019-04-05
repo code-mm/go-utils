@@ -55,7 +55,7 @@ func GetFileSuffix(paths string) string {
 }
 
 // 拷贝文件
-// par1 目标文件
+// par1 目标文件¡¡
 // par2 源文件
 func CopyFile(dstName, srcName string) (written int64, err error) {
 	src, err := os.Open(srcName)
